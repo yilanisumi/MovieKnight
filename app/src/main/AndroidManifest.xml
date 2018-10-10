@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nathan.movieknight">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name=".MovieKnightAppli"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:label="@string/title_activity_profile"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.PROFILE" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!--
+              ATTENTION: This intent was auto-generated. Follow instructions at
+              https://g.co/AppIndexing/AndroidStudio to publish your Android app deep links.
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!--
+                  ATTENTION: This data URL was auto-generated. We recommend that you use the HTTP scheme.
+                  TODO: Change the host or pathPrefix as necessary.
+                -->
+                <data
+                    android:host="movieknight.nathan.example.com"
+                    android:pathPrefix="/profile"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.MovieListActivity"
+            android:label="@string/title_activity_movies"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MOVIES" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!--
+              ATTENTION: This intent was auto-generated. Follow instructions at
+              https://g.co/AppIndexing/AndroidStudio to publish your Android app deep links.
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!--
+                  ATTENTION: This data URL was auto-generated. We recommend that you use the HTTP scheme.
+                  TODO: Change the host or pathPrefix as necessary.
+                -->
+                <data
+                    android:host="movieknight.nathan.example.com"
+                    android:pathPrefix="/movies"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.EventActivity"
+            android:label="@string/title_activity_event"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.EVENT" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!--
+              ATTENTION: This intent was auto-generated. Follow instructions at
+              https://g.co/AppIndexing/AndroidStudio to publish your Android app deep links.
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!--
+                  ATTENTION: This data URL was auto-generated. We recommend that you use the HTTP scheme.
+                  TODO: Change the host or pathPrefix as necessary.
+                -->
+                <data
+                    android:host="movieknight.nathan.example.com"
+                    android:pathPrefix="/event"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.MakeEventActivity"
+            android:label="@string/title_activity_make_event"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAKEEVENT" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!--
+              ATTENTION: This intent was auto-generated. Follow instructions at
+              https://g.co/AppIndexing/AndroidStudio to publish your Android app deep links.
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!--
+                  ATTENTION: This data URL was auto-generated. We recommend that you use the HTTP scheme.
+                  TODO: Change the host or pathPrefix as necessary.
+                -->
+                <data
+                    android:host="movieknight.nathan.example.com"
+                    android:pathPrefix="/makeevent"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.SearchActivity"
+            android:label="@string/title_activity_search"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!--
+              ATTENTION: This intent was auto-generated. Follow instructions at
+              https://g.co/AppIndexing/AndroidStudio to publish your Android app deep links.
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!--
+                  ATTENTION: This data URL was auto-generated. We recommend that you use the HTTP scheme.
+                  TODO: Change the host or pathPrefix as necessary.
+                -->
+                <data
+                    android:host="movieknight.nathan.example.com"
+                    android:pathPrefix="/search"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.MovieActivity"
+            android:label="@string/title_activity_movie"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MOVIE" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!--
+              ATTENTION: This intent was auto-generated. Follow instructions at
+              https://g.co/AppIndexing/AndroidStudio to publish your Android app deep links.
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!--
+                  ATTENTION: This data URL was auto-generated. We recommend that you use the HTTP scheme.
+                  TODO: Change the host or pathPrefix as necessary.
+                -->
+                <data
+                    android:host="movieknight.nathan.example.com"
+                    android:pathPrefix="/movie"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.LoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            >
+        </activity>
+        <activity
+            android:name=".activities.EventListActivity"
+            android:label="@string/title_activity_event_list"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.EVENTLIST" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!--
+              ATTENTION: This intent was auto-generated. Follow instructions at
+              https://g.co/AppIndexing/AndroidStudio to publish your Android app deep links.
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!--
+                  ATTENTION: This data URL was auto-generated. We recommend that you use the HTTP scheme.
+                  TODO: Change the host or pathPrefix as necessary.
+                -->
+                <data
+                    android:host="movieknight.nathan.example.com"
+                    android:pathPrefix="/eventlist"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.FriendListActivity"
+            android:label="@string/title_activity_friend_list"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.FRIENDLIST" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!--
+              ATTENTION: This intent was auto-generated. Follow instructions at
+              https://g.co/AppIndexing/AndroidStudio to publish your Android app deep links.
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!--
+                  ATTENTION: This data URL was auto-generated. We recommend that you use the HTTP scheme.
+                  TODO: Change the host or pathPrefix as necessary.
+                -->
+                <data
+                    android:host="movieknight.nathan.example.com"
+                    android:pathPrefix="/friendlist"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.FriendRequestsActivity"
+            android:label="@string/title_activity_friend_requests"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.FRIENDREQUEST" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!--
+              ATTENTION: This intent was auto-generated. Follow instructions at
+              https://g.co/AppIndexing/AndroidStudio to publish your Android app deep links.
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!--
+                  ATTENTION: This data URL was auto-generated. We recommend that you use the HTTP scheme.
+                  TODO: Change the host or pathPrefix as necessary.
+                -->
+                <data
+                    android:host="movieknight.nathan.example.com"
+                    android:pathPrefix="/friendrequests"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.ProfileMovieListActivity"
+            android:label="@string/title_activity_event_list"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.ProfileMovieLIST" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!--
+              ATTENTION: This intent was auto-generated. Follow instructions at
+              https://g.co/AppIndexing/AndroidStudio to publish your Android app deep links.
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!--
+                  ATTENTION: This data URL was auto-generated. We recommend that you use the HTTP scheme.
+                  TODO: Change the host or pathPrefix as necessary.
+                -->
+                <data
+                    android:host="movieknight.nathan.example.com"
+                    android:pathPrefix="/profilemovielist"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.MoviesSearchActivity"
+            android:label="@string/title_activity_movies_search"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MOVIESSEARCH" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!--
+              ATTENTION: This intent was auto-generated. Follow instructions at
+              https://g.co/AppIndexing/AndroidStudio to publish your Android app deep links.
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!--
+                  ATTENTION: This data URL was auto-generated. We recommend that you use the HTTP scheme.
+                  TODO: Change the host or pathPrefix as necessary.
+                -->
+                <data
+                    android:host="movieknight.nathan.example.com"
+                    android:pathPrefix="/moviessearch"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.PopUpActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".activities.PublicEventsActivity"
+            android:label="@string/title_activity_public_events"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.PUBLICEVENTS" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!--
+              ATTENTION: This intent was auto-generated. Follow instructions at
+              https://g.co/AppIndexing/AndroidStudio to publish your Android app deep links.
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!--
+                  ATTENTION: This data URL was auto-generated. We recommend that you use the HTTP scheme.
+                  TODO: Change the host or pathPrefix as necessary.
+                -->
+                <data
+                    android:host="movieknight.nathan.example.com"
+                    android:pathPrefix="/publicevents"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

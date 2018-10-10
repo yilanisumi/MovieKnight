@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <TableRow>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Event Title"
+            android:id="@+id/listeventtxt"
+            android:layout_gravity="center_vertical"
+
+            android:layout_marginLeft="20dp"/>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Date/Time"
+            android:id="@+id/listeventdateTime"
+            android:layout_gravity="center_vertical"
+            android:textSize="18dp"
+            android:textIsSelectable="false"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Theater"
+            android:id="@+id/listeventmovieTheater"
+            android:layout_gravity="center_vertical"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp" />
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="100dp"
+        android:layout_gravity="right"
+        android:id="@+id/listimage"
+        android:src="@drawable/rightarrow"
+        android:layout_marginLeft="50dp" />
+
+        />
+</TableRow>
+</TableLayout>

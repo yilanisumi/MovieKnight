@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background = "@color/grey">
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp">
+        <TextView
+            android:layout_width="113dp"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="\t Date/Time"
+
+            android:textSize="20dp" />
+
+
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:id="@+id/dateTime"
+            android:maxLines="1"
+            android:singleLine="true"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="113dp"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="\t Location"
+
+            android:textSize="20dp" />
+
+
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:id="@+id/location"
+            android:maxLines="1"
+            android:singleLine="true"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        >
+
+        <TextView
+            android:layout_width="113dp"
+            android:layout_height="35dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="\t Movie"
+            android:id="@+id/textView"
+            android:textSize="20dp" />
+
+
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:id="@+id/movieText"
+            android:text="\t MovieTitle"
+            android:maxLines="3"
+            android:singleLine="true"
+            android:textStyle = "bold"
+            android:textSize = "25dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/privacy_radio_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:checkedButton="@+id/publicradiobutton">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Public"
+                android:id="@+id/publicradiobutton"
+                android:checked="false"
+                android:layout_marginLeft="75dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Private"
+                android:id="@+id/privateradiobutton"
+                android:layout_marginLeft="75dp"
+                android:checked="false" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:checkedButton="@+id/homeradiobutton">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:id="@+id/homeradiobutton"
+                android:checked="false"
+                android:layout_marginLeft="75dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Theater"
+                android:id="@+id/theaterradiobutton"
+                android:layout_marginLeft="75dp"
+                android:checked="false" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Friends to Invite"
+                    android:id="@+id/friendtext"
+                    android:layout_marginLeft="45dp"
+                    android:textStyle = "bold"
+                    android:textSize = "20dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Make Event"
+                    android:id="@+id/make_event"
+                    android:layout_marginLeft="30dp" />
+            </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/friendlistView"
+        android:layout_weight = "1"
+        />
+</LinearLayout>
+

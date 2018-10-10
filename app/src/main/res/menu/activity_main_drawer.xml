@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_movies"
+            android:icon="@drawable/movie"
+            android:title="Movies"
+            android:background = "@color/black"
+            android:textColor = "@color/white"/>
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/glass"
+            android:title="Search"
+            android:background = "@color/black"
+            android:textColor = "@color/white"/>
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/profile"
+            android:title="Profile"
+            android:background = "@color/black"
+            android:textColor = "@color/white"
+            />
+
+
+    </group>
+
+    <item android:title="Social">
+        <menu>
+            <item
+                android:id="@+id/nav_events"
+                android:icon="@drawable/event"
+                android:title="My Events" />
+            <item
+                android:id="@+id/nav_public_events"
+                android:icon="@drawable/event"
+                android:title="Public Events" />
+            <item
+                android:id="@+id/nav_friend_requests"
+                android:icon="@drawable/friendrequest"
+                android:title="Friend Requests" />
+        </menu>
+    </item>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_log_out"
+            android:icon="@drawable/logout"
+            android:title="Log Out" />
+    </group>
+
+</menu>
